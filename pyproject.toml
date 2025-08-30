@@ -1,0 +1,11 @@
+[tool.black]
+line-length = 110
+skip-string-normalization = true
+target-version = ['py313']
+indent-size = 2
+
+[tool.isort]
+profile = "black"
+line_length = 110
+multi_line_output = 3
+include_trailing_comma = true

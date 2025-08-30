@@ -1,0 +1,24 @@
+repos:
+  - repo: https://github.com/pre-commit/mirrors-clang-format
+    rev: v21.1.0
+    hooks:
+      - id: clang-format
+        files: \.(cpp|hpp|ipp|h)$
+
+  - repo: https://github.com/rust-lang/rustfmt
+    rev: "v1.8.0"
+    hooks:
+      - id: rustfmt
+        files: \.rs$
+
+  - repo: https://github.com/psf/black
+    rev: 23.1.0
+    hooks:
+      - id: black
+        language_version: python3
+
+  - repo: https://github.com/PyCQA/isort
+    rev: v6.0.1
+    hooks:
+      - id: isort
+        files: \.py$
